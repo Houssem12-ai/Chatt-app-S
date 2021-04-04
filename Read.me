@@ -1,0 +1,68 @@
+ Socket.io handles the real-time communication between your front-end and back-end.
+
+ ______
+
+ int this article : "https://www.quora.com/What-is-the-best-way-to-create-a-real-time-multi-user-chat-app-in-JS"
+ => he said something interesting !! about using redis and it's importance
+ {
+      Redis is an in-mempry datastore that also acts as a message broker.
+      This means that if you use multiple back-end services or use clustering, it helps you publish the messages to all the proper services using its pub/sub protocol
+ }
+
+ ___________________
+ real-time messaging(typing now) and notifications(also)
+
+ We see real-time messaging features in on-demand taxi apps, delivery apps, and collaborative platforms.
+ => u see ? the other form of things that could work when learning messeging 
+
+ ______
+ deliver notifications in real-time -> how ?
+ ______
+ Live streams that users can interact with in real-time
+ ______
+ tracking the progress of users’ taxi rides or deliveries in real-time
+ Their real-time progress updates increase the usability and reliability of these applications. 
+___________________
+Data captured by the sensors placed in IoT devices are transmitted, processed, and displayed to the end-users with a minimum delay. 
+Since most of the inputs captured by these devices, like temperature and lighting, constantly change with the time
+=> applications working with IoT devices should be able to receive and send data in real-time
+
+ ****************________________***************______________
+ The old process 
+If we implement this application like a normal web application,
+ where only the client can initiate requests to the server to receive data, 
+ the user has to either refresh the web page regularly to see the newest messages 
+ or the client-side should send AJAX requests to the server in short time intervals to retrieve the newest messages
+
+=> not very user friendly + the latter is a waste of application resources.
+
+
+HHH => My time has come  :WebSocket is a communication protocol
+server can send data to the client any time without the client having to request data first
+use the WebSocket API to communicate using WebSockets
+=> etsablishing websocket connections
+
+* socket.io(library = much simpler implementation of WebSockets) is an API(library is an API ? already coded when u donload it or whut ?) to the API of websocket
+
+
+____________________________________________________
+re flocking around this : vocab
+
+
+____________________________________________________
+
+Data-intensive programs are focus on retrieving and storing data,
+ while I/O-intensive programs focus on interacting with external resources.
+
+
+
+QUESTIONS !{
+    READ MORE HOW IT IS async and non-blocking
+    how blocking with intensive app while it's asynch and can let that task executes in the background  
+
+}
+
+ ur profile that i dream with 
+ responses like nodejs usecases found at ur website
+
+ 
